@@ -22,3 +22,6 @@ jobs:
 
       - name: Build
         run: mkdocs build
+
+      - name: Serve
+        run: mkdocs serve
