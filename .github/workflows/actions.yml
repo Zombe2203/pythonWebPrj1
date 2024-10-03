@@ -3,6 +3,10 @@ name: Build and Deploy of Static Site
 on:
   push:
 
+permissions:
+  contents: read
+  pages: write
+
 jobs:
   build:
     name: Build and Deploy
