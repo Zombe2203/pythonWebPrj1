@@ -1,17 +1,13 @@
 # Welcome to Python Web 3
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Made via [mkdocs.org](https://www.mkdocs.org).
 
 ## Project layout
-
-    mkdocs.yml    # The configuration file.
+    
+    .github/
+        workflows/
+            actions.yml     # File for GH actions
     docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+        index.md            # Sorce for the site 
+    README.md               # Readme about creating this repo
+    mkdocsyml               # The configuration file
