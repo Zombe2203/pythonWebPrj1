@@ -25,7 +25,7 @@ jobs:
         run: pip install mkdocs
 
       - name: Build
-        run: mkdocs build
+        run: mkdocs build --clean
 
       - name: Deploy
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
