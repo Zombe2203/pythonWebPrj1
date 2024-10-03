@@ -1,4 +1,4 @@
-# Welcome to Python Web 2
+# Welcome to Python Web 3
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
