@@ -26,4 +26,4 @@ How did that happen:
   contents: write
   pages: write``` to actions.yml
 
-* On any push GH builds site using MkDocs
+* On any push GH builds site at https://zombe2203.github.io/pythonWebPrj1/ using MkDocs
