@@ -3,3 +3,5 @@ site_name: Python Web 1
 theme:
   name: null
   custom_dir: 'test_theme/'
+
+extra_css: [fonts.css]
