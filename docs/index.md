@@ -1,4 +1,4 @@
-# Welcome to Python Web 1
+# Добро пожаловать на сайт Python Web 2
 
 Made via [mkdocs.org](https://www.mkdocs.org).
 
