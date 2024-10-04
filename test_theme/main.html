@@ -5,6 +5,10 @@
     {%- for path in config.extra_css %}
       <link href="{{ path | url }}" rel="stylesheet">
     {%- endfor %}
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+    </style>
   </head>
   <body>
     {{ page.content }}
