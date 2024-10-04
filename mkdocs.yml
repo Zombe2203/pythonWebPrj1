@@ -1,1 +1,5 @@
 site_name: Python Web 1
+
+theme:
+  name: test
+  custom_dir: 'test_theme/'

@@ -29,7 +29,3 @@ jobs:
 
       - name: Deploy
         run: mkdocs gh-deploy --force
-        env:
-          REPO_KEY: ${{ secrets.ACTIONS_TOKEN }}
-          CONFIG_FILE: mkdocs.yml
-          USERNAME: github-actions[bot]
