@@ -4,4 +4,4 @@ theme:
   name: null
   custom_dir: 'test_theme/'
 
-extra_css: [fonts.css]
+extra_css: [test.css]
