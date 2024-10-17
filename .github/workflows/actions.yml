@@ -38,13 +38,15 @@ jobs:
       - name: Install ESLint
         run: npm install eslint
 
+      - name: cd
+        run: /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
+
       - name: ls
-        run: ls -R /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
+        run: ls -R
 
       - name: Run ESLint
         uses: sibiraj-s/action-eslint@v3
         with:
-          working-directory: /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
           eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx,html'
           annotations: true
