@@ -39,7 +39,7 @@ jobs:
         run: npm install eslint
 
       - name: cd
-        run: /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
+        run: cd /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
 
       - name: ls
         run: ls -R
