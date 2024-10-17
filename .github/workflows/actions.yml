@@ -41,7 +41,6 @@ jobs:
       - name: Run ESLint
         uses: sibiraj-s/action-eslint@v3
         with:
-          working-directory: /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
           eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx,html'
           annotations: true
