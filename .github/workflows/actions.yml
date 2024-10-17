@@ -27,6 +27,16 @@ jobs:
       - name: Build
         run: mkdocs build --clean
 
+      - name: Lint HTML
+        run: |
+          pip install html-linter
+          html_linter docs
+          
+#      - name: Minify CSS
+#        run: |
+#          pip install csscompressor
+#          csscompressor --input overrides/css/extra.css --output overrides/css/extra.min.css
+
       - name: Deploy
         run: mkdocs gh-deploy --force
 
