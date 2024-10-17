@@ -36,8 +36,8 @@ jobs:
       - name: Check npm version
         run: npm -version
 
-      - name: Install ESLint
-        run: npm install eslint
+      - name: Install modules
+        run: yarn
 
-      - name: Using ESLint
-        run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
+      - name: Run ESLint
+        run: eslint . --ext .js,.jsx,.ts,.tsx
