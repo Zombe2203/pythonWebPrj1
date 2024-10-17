@@ -30,7 +30,7 @@ jobs:
       - name: Lint HTML
         run: |
           pip install html-linter
-          html_lint.py /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html
+          html_lint.py /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
           
 #      - name: Minify CSS
 #        run: |
