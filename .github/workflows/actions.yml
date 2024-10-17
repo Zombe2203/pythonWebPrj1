@@ -46,12 +46,16 @@ jobs:
       - name: Using ESLint
         run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
 
-#  lint:
-#    runs-on: ubuntu-latest
-#    name: Linting
-#
-#    needs: builddeploy
-#    steps:
-#
-#      - uses: actions/setup-node@v1
+  lint:
+    runs-on: ubuntu-latest
+    name: Linting
+
+    needs: builddeploy
+    steps:
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: ls
+        run: ls -R /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
 
