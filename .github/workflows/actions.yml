@@ -21,11 +21,6 @@ jobs:
         with:
           python-version: 3.12
 
-      - name: Node Setup
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
       - name: MkDocs Setup
         run: pip install mkdocs
 
@@ -35,18 +30,23 @@ jobs:
       - name: Deploy
         run: mkdocs gh-deploy --force
 
-      - name: Install ESLint
-        run: npm install eslint
+#      - name: Node Setup
+#        uses: actions/setup-node@v4
+#        with:
+#          node-version: 20
 
-      - name: cd
-        run: cd /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
-
-      - name: ls
-        run: ls -R
-
-      - name: Run ESLint
-        uses: sibiraj-s/action-eslint@v3
-        with:
-          eslint-args: '--ignore-path=.gitignore --quiet'
-          extensions: 'js,jsx,ts,tsx,html'
-          annotations: true
+#      - name: Install ESLint
+#        run: npm install eslint
+#
+#      - name: cd
+#        run: cd /home/runner/work/pythonWebPrj1/pythonWebPrj1/site
+#
+#      - name: ls
+#        run: ls -R
+#
+#      - name: Run ESLint
+#        uses: sibiraj-s/action-eslint@v3
+#        with:
+#          eslint-args: '--ignore-path=.gitignore --quiet'
+#          extensions: 'js,jsx,ts,tsx,html'
+#          annotations: true
