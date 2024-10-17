@@ -23,6 +23,8 @@ jobs:
 
       - name: Node Setup
         uses: actions/setup-node@v4
+        with:
+          node-version: 20
 
       - name: MkDocs Setup
         run: pip install mkdocs
@@ -33,11 +35,12 @@ jobs:
       - name: Deploy
         run: mkdocs gh-deploy --force
 
-      - name: Check npm version
-        run: npm -version
-
-      - name: Install modules
-        run: yarn
+      - name: Install ESLint
+        run: npm ci eslint
 
       - name: Run ESLint
-        run: eslint . --ext .js,.jsx,.ts,.tsx
+        uses: sibiraj-s/action-eslint@v3
+        with:
+          eslint-args: '--ignore-path=.gitignore --quiet'
+          extensions: 'js,jsx,ts,tsx'
+          annotations: true
