@@ -1,3 +1,4 @@
+import globals from 'globals';
 import js from '@eslint/js';
 import stylisticJs from '@stylistic/eslint-plugin-js';
 
@@ -5,25 +6,25 @@ export default [
     js.configs.recommended,
 
     // Глобальные переменные только для скриптов Node.js
-    //{
-        //ignores: ['src/scripts/**/*.js'],
-        //languageOptions: {
-            //globals: {
+    {
+        ignores: ['src/scripts/**/*.js'],
+        languageOptions: {
+            globals: {
                 // Заменить на ...globals.nodeBuiltin для ESM
-                //...globals.node,
-            //},
-        //},
-    //},
+                ...globals.node,
+            },
+        },
+    },
 
     // Глобальные переменные только для браузерных скриптов
-    //{
-        //files: ['src/scripts/**/*.js'],
-        //languageOptions: {
-           // globals: {
-            //    ...globals.browser,
-         //   },
-     //   },
-   // },
+    {
+        files: ['src/scripts/**/*.js'],
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+            },
+        },
+    },
     {
         plugins: {
             '@stylistic/js': stylisticJs,
