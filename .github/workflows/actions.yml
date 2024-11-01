@@ -53,6 +53,9 @@ jobs:
         
       - name: Install ESLint dependencies (@stylistic/eslint-plugin-js)
         run: npm install @stylistic/eslint-plugin-js
+
+      - name: Install ESLint dependencies (eslint-plugin-html)
+        run: npm install eslint-plugin-html
     
       - name: Using ESLint
         run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
