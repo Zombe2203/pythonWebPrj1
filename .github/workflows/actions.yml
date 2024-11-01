@@ -58,7 +58,7 @@ jobs:
         run: npm install eslint-plugin-html
     
       - name: Using ESLint
-        run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
+        run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix --env-info
 
       - name: Deploy
         run: mkdocs gh-deploy --force
