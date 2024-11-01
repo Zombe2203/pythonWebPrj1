@@ -46,7 +46,6 @@ jobs:
   uselint:
     name: Lint and Deploy
     needs: builddeploy
-    runs-on: ubuntu-latest
     
     steps:
       - name: Using ESLint
