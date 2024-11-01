@@ -45,6 +45,15 @@ jobs:
       - name: Install ESLint
         run: npm install eslint
 
+      - name: Install ESLint dependencies (globals)
+        run: npm install globals
+        
+      - name: Install ESLint dependencies (@eslint/js)
+        run: npm install @eslint/js
+        
+      - name: Install ESLint dependencies (@stylistic/eslint-plugin-js)
+        run: npm install @stylistic/eslint-plugin-js
+    
       - name: Using ESLint
         run: npx eslint /home/runner/work/pythonWebPrj1/pythonWebPrj1/site/index.html --fix
 
